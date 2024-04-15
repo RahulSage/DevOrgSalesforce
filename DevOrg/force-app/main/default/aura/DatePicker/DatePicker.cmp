@@ -1,0 +1,191 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+
+ <lightning:accordion aura:id="accordion" activeSectionName="A">
+        <lightning:accordionSection name="A" label="Select Filters">
+            
+            <aura:set attribute="body">
+                 <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>
+                     <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>
+                     <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>
+                     <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>
+                     <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>
+   
+<div >
+        <lightning:layout>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input type="date" name="input1" label="Enter a date" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input type="date" name="input1" label="Enter a date" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="6">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>
+                     <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>                 <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>                 <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>                 <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>                 <div >
+        <lightning:layout>
+             <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+                         <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            <lightning:layoutItem padding="around-small" size="3">
+                <div class="custom-box"><lightning:input name="input1" label="Enter some text" /></div>
+            </lightning:layoutItem>
+            
+        </lightning:layout>
+    </div>
+            </aura:set>
+        </lightning:accordionSection>
+    </lightning:accordion>
+</aura:component>

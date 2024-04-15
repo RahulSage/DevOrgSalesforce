@@ -1,0 +1,24 @@
+<apex:page standardController="Account" recordSetVar="AccountRahul">
+<apex:form >
+
+
+<apex:pageBlock title="Account">
+<apex:pageBlockButtons Location="Bottom">
+  <apex:commandButton value="<< First" action="{!First}" style="height:50px;background:aqua;"/>
+  <apex:commandButton value="< Prev" action="{!Previous}" style="height:50px;background:pink"/>
+  <apex:commandButton value="Next >" action="{!Next}" style="height:50px;background:pink"/>
+  <apex:commandButton value="Last >>" action="{!Last}" style="height:50px;background:aqua"/>
+</apex:pageBlockButtons>
+   <apex:pageBlockTable value="{!AccountRahul}" var="item">
+      <apex:column value="{!item.Name}" style="background:yellow"/>
+       <apex:column value="{!item.AccountNumber}" />
+        <apex:column value="{!item.Site}" headerValue="Place works"/>
+         <apex:column value="{!item.Fax}" headerValue="Contact number"/>
+          <apex:column value="{!item.Industry}"/>
+   </apex:pageBlockTable>
+</apex:pageBlock>
+
+</apex:form>
+
+
+</apex:page>

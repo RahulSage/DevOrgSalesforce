@@ -1,0 +1,12 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+	  <aura:registerEvent name="mySearchEvt" type="c:ratingSearchEvent" />
+    <aura:attribute name="selRating" type="String" />
+    
+    <lightning:select aura:id = "select" label="Select Your Rating" value="{!v.selRating}" onchange="{!c.doSearch}">
+       <option value="">--None selected-- </option>
+       <option value="Hot">Hot</option>
+       <option value="Warm">Warm</option>
+       <option value="Cold">Cold</option>
+        <hr/>
+    </lightning:select>
+</aura:component>

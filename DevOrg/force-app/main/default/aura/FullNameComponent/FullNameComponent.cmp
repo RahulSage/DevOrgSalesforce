@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:attribute Name="fName" type= "String"	description="To capture first Name"/>
+    <aura:attribute Name="lName" type="String"  description="To capture Last Name"/>
+    <aura:attribute Name="result" type="String" description="To assign full Name" />
+    
+    {!v.fname};
+    {!v.lname};
+    
+</aura:component>

@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute Name="fName" type= "String"	description="To capture first Name"/>
+    <aura:attribute Name="lName" type="String"  description="To capture Last Name"/>
+    <aura:attribute Name="result" type="String" description="To assign full Name" />
+    
+    <ui:inputText label="First Name" value="{!v.fName}" />
+    <ui:inputText label="Last Name" value="{!v.lName}" />
+    <lightning:button label="Indian" onclick="{!c.doIndian}" /> <br/>
+    <lightning:button label="American" onclick="{!c.doAmerican}" /> <br/>
+    <ui:outputText value= "{!v.result}" />
+</aura:component>

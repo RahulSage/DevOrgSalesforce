@@ -1,0 +1,3 @@
+<aura:component >
+    <c:mySecuirytyCmp myCmpEvt="{!c.doHandle}" />
+</aura:component>

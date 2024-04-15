@@ -1,0 +1,27 @@
+<apex:page controller="searchAccountsCon">
+  <apex:slds />
+  <apex:form >
+      <apex:actionStatus id="myStatus" startText="Loading.........." startStyle="background:green; color:white; font-size:19px; font-family:Lucida Handwriting;"></apex:actionStatus>
+      <apex:pagemessages ></apex:pagemessages>
+     <apex:selectList size="1" value="{!selRating}" style="margin-left:300px">
+       <apex:selectOption itemValue="" itemLabel="--None--"></apex:selectOption>
+       <apex:selectOption itemValue="Hot" itemLabel="Hot"></apex:selectOption>
+       <apex:selectOption itemValue="Warm" itemLabel="Warm"></apex:selectOption>
+       <apex:selectOption itemValue="Cold" itemLabel="Cold"></apex:selectOption>
+     </apex:selectList>
+     <apex:commandButton value="Submit" action="{!doSearch}" reRender="refresh" styleClass="slds-button slds-button_destructive" style="margin-left:200px;" status="myStatus"/>
+     
+     <apex:outputPanel id="refresh">
+     <apex:pageBlock title="{!accCount} Accounts Found" >
+         <apex:pageBlockTable value="{!myAccounts}" var="Acc">
+             <apex:column value="{!Acc.id}"/>
+             <apex:column value="{!Acc.Name}"/>
+             <apex:column value="{!Acc.AccountNumber}" />
+             <apex:column value="{!Acc.Industry}"/>
+            
+         </apex:pageBlockTable>
+     </apex:pageBlock>
+     </apex:outputPanel>
+          
+  </apex:form>
+</apex:page>

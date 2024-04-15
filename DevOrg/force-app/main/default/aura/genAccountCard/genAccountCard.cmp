@@ -1,0 +1,30 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="account" type="Account"/>
+    <div class="demo-only" style="width:30rem">
+  <article class="slds-tile slds-media">
+    <div class="slds-media__figure">
+      <span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+        <img alt="" src="/assets/images/avatar2.jpg" title="Lexee L. Jackson avatar" />
+      </span>
+    </div>
+    <div class="slds-media__body">
+      <h3 class="slds-tile__title slds-truncate" title="Account Name">
+        <a href="javascript:void(0);">{!v.account.Name}</a>
+      </h3>
+      <div class="slds-tile__detail">
+        <dl class="slds-list_horizontal slds-wrap">
+                         <dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Name">Rating:</dt>
+                <dd class="slds-item_detail slds-truncate" title="Description for first label">{!v.account.Rating}</dd>
+                <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Industry:</dt>
+                <dd class="slds-item_detail slds-truncate" title="Description for second label">{!v.account.Industry}</dd>
+    <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Third Label">Website:</dt>
+                <dd class="slds-item_detail slds-truncate" title="Description for second label">{!v.account.Website}</dd>
+    <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Account Type:</dt>
+                <dd class="slds-item_detail slds-truncate" title="Description for second label">{!v.account.Type}</dd>   
+
+        </dl>
+      </div>
+    </div>
+  </article>
+</div>
+</aura:component>

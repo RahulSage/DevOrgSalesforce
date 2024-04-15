@@ -1,0 +1,22 @@
+<apex:page controller="MultiplyCon" >
+  <apex:form >
+    <apex:slds />
+    <apex:pageBlock >
+    
+        <apex:pageBlockSection >
+       <apex:inputText value="{!num1}"/>
+       <br/>
+       <apex:inputText value="{!num2}"/>
+       <br/>
+       <apex:commandButton value="Multiply" action="{!doMultiply}" reRender="refresh"/>
+       <br/>
+       </apex:pageBlockSection>
+       <apex:pageBlockSection id="refresh">
+       <apex:outputpanel >
+         <apex:outputText value="kaam {!result} hai" styleClass="slds-text-color_error" style="font-size:100px;" ></apex:outputText>
+       </apex:outputpanel>
+       </apex:pageBlockSection>
+    </apex:pageBlock>
+  
+  </apex:form>
+</apex:page>

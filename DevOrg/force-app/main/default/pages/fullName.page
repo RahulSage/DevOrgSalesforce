@@ -1,0 +1,45 @@
+<apex:page controller="fullNameCont">
+<apex:slds />
+<apex:stylesheet value="{!$Resource.mystyle}"/>
+<apex:includeScript value="{!$Resource.myscript}"/>
+
+<apex:form >
+ <apex:actionStatus id="myStatus" startText="Loading.........." startStyle="background:green; color:white; font-size:19px; font-family:Lucida Handwriting;"></apex:actionStatus>
+<center>
+<apex:image url="{!$Resource.Genpactlogo}" style="width:250px; height:100px;"/> <br/>
+
+<apex:pagemessages id="error"></apex:pagemessages>
+   <table width="100%" border="4px solid">
+        <tr>
+            <td width="40%">
+                <apex:outputText value="First Name" styleClass="mystyle"></apex:outputText>
+            </td>
+            
+            <td width="60%">
+                <apex:inputText value="{!fName}" styleClass="mystyle" />
+            </td>
+        </tr>
+        
+        <tr>
+            <td>
+              <apex:outputText value="Last Name" styleClass="mystyle"></apex:outputText>
+            </td>
+            
+            <td>
+                <apex:inputText value="{!lName}" styleClass="mystyle"/>
+            </td>
+        </tr>
+         
+        </table>
+        
+        <apex:commandButton styleClass="slds slds-button slds-button_brand" value="Indian" action="{!indianName}" reRender="refresh,error" status="myStatus" />
+        <apex:commandButton styleClass="slds slds-button slds-button_destructive" value="American" action="{!americanName}" reRender="refresh,error" status="myStatus" style="margin-left:200px"/>         
+        
+ </center>
+  <apex:outputPanel >
+            <apex:outputText value="{!result}" styleClass="mystyle" id="refresh"></apex:outputText>
+        </apex:outputPanel>
+</apex:form>
+
+
+  </apex:page>

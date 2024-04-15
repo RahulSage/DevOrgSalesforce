@@ -1,0 +1,13 @@
+<aura:component >
+    <aura:registerEvent name="myCmpEvt" type="c:myEvent" />
+    <aura:attribute type="String" name="gName" />
+    <!-- <ui:inputText value="{!v.gName}" label="Enter Athithi Name" /> -->
+    
+    <lightning:select aura:id="select" name="selectItem" label="Rating" >
+        <option value="">.. Rating ..</option>
+        <option value="Hot">Hot</option>
+        <option value="Cold">Cold</option>
+        <option value="Warm">Warm</option>   
+    </lightning:select>
+    <ui:button label="Submit/Fire" press="{!c.doFire}" />
+</aura:component>

@@ -1,0 +1,3 @@
+<apex:page renderAs="pdf">
+    <apex:outputText value="{!$CurrentPage.Parameters.accName}" style="background:green; color:white; font-size:29px; font-family:Helvetica;"></apex:outputText>
+</apex:page>

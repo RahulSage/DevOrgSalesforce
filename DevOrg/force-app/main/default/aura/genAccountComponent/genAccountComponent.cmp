@@ -1,0 +1,27 @@
+<aura:component controller="genAccountApex" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name="genAccounts" type="Account[]"/>
+    <aura:attribute name="genRatedAccounts" type="Account[]"/>
+    <div class="slds-text-align_center" style= "color: #F89B4D; font-family: 'Lucida', sans-serif; font-size: 40px; font-weight: bold; line-height: 50px; margin: 5; padding-top:25px">List of Accounts</div> <hr/>
+    
+    <div class="slds-text-align_center" style="font-size:25px; color:red; font-weihght:bold">Select an item</div>
+    <lightning:select aura:id="select" name="selectItem" label="" onchange="{!c.onChange}">
+        
+        <option value="">.. Rating ..</option>
+        <option value="Hot">Hot</option>
+        <option value="Cold">Cold</option>
+        <option value="Warm">Warm</option>   
+    </lightning:select>
+   <!-- <aura:handler name="init" value="{!this}" action="{!c.fetchAccountFromController}"/>
+    
+    <aura:iteration items="{!v.genAccounts}" var="account">
+        
+        <c:genAccountCard account="{!account}"/><hr/>
+        
+    </aura:iteration><hr/> -->
+    
+    <aura:iteration items="{!v.genRatedAccounts}" var="genAccount">
+        
+        <c:genAccountCard account="{!genAccount}"/><hr/>
+        
+    </aura:iteration>
+</aura:component>

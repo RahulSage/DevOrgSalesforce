@@ -1,0 +1,30 @@
+<aura:component >
+    <aura:attribute name="genAccount" type="Account" />
+    <div class="demo-only" style="width:30rem">
+<article class="slds-tile slds-media">
+<div class="slds-media__figure">
+<span class="slds-avatar slds-avatar_circle slds-avatar_medium">
+<img alt="" src="/assets/images/avatar2.jpg" title="Lexee L. Jackson avatar" />
+</span>
+</div>
+<div class="slds-media__body">
+<h3 class="slds-tile__title slds-truncate" title="Lexee L. Jackson">
+<a href="javascript:void(0);">{!v.genAccount.Name}</a>
+</h3>
+<div class="slds-tile__detail">
+<dl class="slds-list_horizontal slds-wrap">
+<dt class="slds-item_label slds-text-color_weak slds-truncate" title="First Label">Rating:</dt>
+<dd class="slds-item_detail slds-truncate" title="Description for first label">{!v.genAccount.Rating}</dd>
+<dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Website:</dt>
+<dd class="slds-item_detail slds-truncate" title="Description for second label">{!genAccount.Website}</dd>
+<dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Industry:</dt>
+<dd class="slds-item_detail slds-truncate" title="Description for second label">{!genAccount.Industry}</dd>
+<dt class="slds-item_label slds-text-color_weak slds-truncate" title="Second Label">Phone:</dt>
+<dd class="slds-item_detail slds-truncate" title="Description for second label">{!genAccount.Phone}</dd>    
+</dl>
+</div>
+</div>
+</article>
+</div>
+	
+</aura:component>

@@ -1,0 +1,10 @@
+<aura:component controller="genAccountApex" implements="flexipage:availableForAllPageTypes">
+    <aura:handler event="c:ratingSearchEvent" action="{!c.doFetchAccounts}" />
+    <aura:attribute name="genAccounts" type="Account[]"/>
+    
+    <aura:iteration items="{!v.genAccounts}" var="account">
+        
+        <c:genAccountCard account="{!account}"/><hr/>
+        
+    </aura:iteration><hr/>
+</aura:component>

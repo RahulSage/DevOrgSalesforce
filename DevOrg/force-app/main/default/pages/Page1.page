@@ -1,0 +1,10 @@
+<apex:page controller="nevigation">
+  
+  <apex:form >
+    <apex:pageBlock >
+       <apex:inputtext value="{!AccountName}"/>
+       
+       <apex:commandButton value="Nevigate to next page" action="{!goToPage2}" />
+    </apex:pageBlock>
+  </apex:form>
+</apex:page>
